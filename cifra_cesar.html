@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra de César</title>
+</head>
+
+<body>
+    <script>
+        function cifraComCifraDeCesar( deslocamento, mensagem )
+        {
+            var mensagemEncriptada = "";
+            // Código aqui
+            var mensagemRecebida = mensagem;
+            
+            var mensagemEncriptadaPadrao = mensagemRecebida.toUpperCase();
+
+            for(var i = 0; i < mensagemEncriptadaPadrao.length; i++){
+
+                var posicaoASC = mensagemEncriptadaPadrao.charCodeAt(i);
+                var novaPosicaoASC = ((posicaoASC - 65 + deslocamento) % 25) + 65;
+                
+                mensagemEncriptada += (String.fromCharCode(novaPosicaoASC));
+
+            }
+        
+            return mensagemEncriptada;
+
+        }
+
+        console.log(cifraComCifraDeCesar(5,"abacate"));
+
+        function decifraCifraDeCesar( deslocamento, mensagemCifrada )
+        {
+            var mensagemDecifrada = "";
+            // Código aqui
+            var mensagemSecreta = mensagemCifrada;
+
+            for(var i = 0; i < mensagemSecreta.length; i++){
+
+                var posicaoASCII = mensagemSecreta.charCodeAt(i);
+                var novaPosicaoASCII = ((posicaoASCII - 65 - deslocamento) % 25) + 65;
+                
+                mensagemDecifrada += (String.fromCharCode(novaPosicaoASCII));
+            }
+            return mensagemDecifrada;
+        }
+
+        console.log(decifraCifraDeCesar(5,cifraComCifraDeCesar(5,"abacate")));
+
+            
+
+
+
+
+
+
+        
+
+
+        
+
+
+    </script>
+    
+</body>
+</html>
