@@ -1,0 +1,218 @@
+#corpo{
+    background-image: url("coronavirus-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#titulo_principal{
+    font-size: 50px;
+    font-family: unset;
+    color: seashell;
+}
+
+     
+
+#main{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    
+ }
+
+.principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+ }
+
+#texto_corpo{
+    font-size: 50px;
+    font-family: unset;
+    color: seashell;
+ }
+
+#btn_inicio{
+    size: 30px;
+    transition: background-color 1s linear;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: thistle;
+    border: none;
+    margin: 20px;
+ }
+
+
+#btn_inicio:hover {
+    background-color: red;
+}
+
+#div_personagem{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-around;
+ 
+    list-style: none;
+}
+
+#personagem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    background-image: linear-gradient(to right, thistle, wheat);
+    border-radius: 80%;
+    padding: 10px;
+}
+
+.nome{
+    font-size: 20px;
+    font-family: unset;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.avatar{
+    width: 90px;
+    height: 90px;
+}
+
+.descricao{
+    font-size: 20px;
+    font-family: unset;
+    color: black;
+}
+
+.frase{
+    font-size: 15px;
+    font-family: unset;
+    color: gray;
+}
+
+#btn_alfredo{
+    size: 30px;
+    transition: background-color 1s linear;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: thistle;
+    border: none;
+    margin: 20px;
+}
+
+#btn_aisha {
+    size: 30px;
+    transition: background-color 1s linear;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: thistle;
+    border: none;
+    margin: 20px;
+}
+
+#btn_rael {
+    size: 30px;
+    transition: background-color 1s linear;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: thistle;
+    border: none;
+    margin: 20px;
+}
+
+#btn_rael:hover {
+    background-color: red;
+}
+
+#btn_aisha:hover {
+    background-color: red;
+}
+
+#btn_alfredo:hover {
+    background-color: red;
+}
+
+#jogo_alfredo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto_cumprimento{
+    font-size: 50px;
+    font-family: unset;
+    color: seashell;
+}
+
+.texto_jogo{
+    font-size: 30px;
+    font-family: unset;
+    color: seashell;
+}
+
+.avatar2{
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+
+#botoes_alfredo{
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    justify-content: space-around;
+}
+
+#btn_abrir{
+    size: 30px;
+    transition: background-color 1s linear;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: thistle;
+    border: none;
+    margin-top: 20px;
+}
+
+#btn_abrir:hover {
+    background-color: red;
+}
+
+#btn_ignorar{
+    size: 30px;
+    transition: background-color 1s linear;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: thistle;
+    border: none;
+    margin-top: 20px;
+}
+
+#btn_ignorar:hover {
+    background-color: red;
+}
+
+#fim_jogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
