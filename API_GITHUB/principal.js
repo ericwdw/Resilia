@@ -54,10 +54,8 @@ class Model {
         this.image = dados.avatar_url;
     
         //this.nome_repositorio = dados.title; ainda nao ta certo
-        this.link_repositorio = dados.repos_name;
-
-        
-        
+        this.link_repositorio = dados.html_url;
+ 
         /* this.date = dados.date;
         this.title = dados.title;
         this.image = dados.url;
@@ -101,7 +99,7 @@ class View
         `
             <p >${model.getUsuario()}</p>
             <img src = ${model.getImage()} class = "avatar">
-            <p>${model.getLink()}</p>
+            <a href ="${model.getLink()}">${model.getLink()}</a>
         ` //crio para cada vez que aperta o botao elementos na div que recebem os dados da API
 
         document.body.appendChild( sinistro ); //ultima parte, adiciono a div sinistra no body da pagina mostrando para o usuario
